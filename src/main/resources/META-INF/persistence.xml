@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="loginPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Modelo.Almacen</class>
+    <class>Modelo.Direccion</class>
+    <class>Modelo.Rol</class>
+    <class>Modelo.Usuario</class>
+    <class>Modelo.CentroDeDistribucion</class>
+    <class>Modelo.Cliente</class>
+    <class>Modelo.EmpleadoTransportista</class>
+    <class>Modelo.EstadoDelPedido</class>
+    <class>Modelo.Pedido</class>
+    <class>Modelo.Proveedor</class>
+    <class>Modelo.DocumentoTransporte</class>
+    <class>Modelo.Dimension</class>
+    <class>Modelo.HistorialDeEnvios</class>
+    <class>Modelo.Paquete</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pa2_proyectofinal?serverTimezoneUTC"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="789123456"/>
+      <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
